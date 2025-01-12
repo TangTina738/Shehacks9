@@ -1,27 +1,72 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Intro of Page */
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  gap: 20px; 
+  width: 80%;
+}
+
+#txt {
+  flex: 1;
 }
 
 .slogan {
-  color: white;
-  position: fixed;
-  left: 100px;
-  margin-top: -200px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  background-color: #007bff;
+  color: rgb(33, 19, 19);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+button:hover {
+  background-color: #0056b3;
+}
+
+.image-div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+}
+
+.image-div img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; 
+}
+
+/* About Us Section */
+.about-us {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  margin: 50px auto; 
+  width: 80%;
+  padding: 30px; 
+}
+
+.about-us h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 1rem;
+  color: #666;
+  max-width: 600px; 
 }

@@ -34,7 +34,7 @@ const NavBar = () => {
           ))}
         </div>
         <div className="sign-buttons">
-          <button className="try-now">Try Now</button>
+          <button className="try-now">Create Now</button>
         </div>
       </nav>
 
@@ -68,3 +68,4 @@ const NAV_ITEMS = [
 ];
 
 export default NavBar;
+
