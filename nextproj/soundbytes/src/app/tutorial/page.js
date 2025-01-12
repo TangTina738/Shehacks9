@@ -85,8 +85,15 @@ function TutorialPage() {
           {/* Step 1 */}
           <div className="step">
             <div className="step-image">
-              <img src="your-image1.png" alt="Step 1" />
-              <div className="step16Border">Step 1 Border</div>
+              <img src="liveFeedPic.png" alt="Step 1" 
+               style={{
+                border: "15px solid rgba(194, 218, 244, 0.5)",  // Black border
+                borderRadius: "25px",      // Curved edges (adjust the value as needed)
+                padding: "5px",           // Optional: Add space between the border and image
+                width: "100%",            // Optional: Ensures it scales properly
+                height: "auto"            // Maintains aspect ratio
+              }} 
+              />
 
               <img
               src="Arrow1.png"
@@ -105,8 +112,7 @@ function TutorialPage() {
           {/* Step 2 */}
           <div className="step reverse">
             <div className="step-image overlap">
-              <img src="your-image2.png" alt="Step 2" />
-              <div className="stepBorder">Gesture Name</div>
+              <img src="AudioControls.png" alt="Step 2" />
             </div>
             <div className="step-text">
               <h2>2. Start Recording</h2>
@@ -118,8 +124,7 @@ function TutorialPage() {
           {/* Step 3 */}
           <div className="step reverse">
             <div className="step-image">
-              <img src="your-image3.png" alt="Step 3" />
-              <div className="stepBorder">Gesture Name</div>
+              <img src="effects.png" alt="Step 3" />
             </div>
             <div className="step-text">
               <h2>3. Add Effects</h2>
@@ -149,8 +154,15 @@ function TutorialPage() {
           {/* Step 5 */}
           <div className="step">
             <div className="step-image">
-              <img src="your-image5.png" alt="Step 5" />
-              <div className="step16Border">Step 456 Border</div>
+              <img src="liveFeedPic.png" alt="Step 5" 
+                style={{
+                  border: "15px solid rgba(194, 218, 244, 0.5)",  // Black border
+                  borderRadius: "25px",      // Curved edges (adjust the value as needed)
+                  padding: "5px",           // Optional: Add space between the border and image
+                  width: "100%",            // Optional: Ensures it scales properly
+                  height: "auto"            // Maintains aspect ratio
+                }} 
+              />
               <img
               src="Arrow3.png"
               alt="Squiggly Arrow Pointing to Preview Mix Button"
@@ -168,7 +180,7 @@ function TutorialPage() {
           {/* Step 6 */}
           <div className="step reverse">
             <div className="step-image">
-              <img src="your-image6.png" alt="Step 6" />
+              
               <img
               src="Arrow4.png"
               alt="Squiggly Arrow Pointing to Download Track Button"
