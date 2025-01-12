@@ -12,6 +12,7 @@ import GestureTrainer from "@/components/ui/gesture-trainer";
 import { Download, Mic, Square } from "lucide-react";
 import WaveSurfer from 'wavesurfer.js';
 import { Grid, GridItem, Heading, Text, Container, Flex } from "@chakra-ui/react";
+import Image from "next/image";
 
 const ModeBtn = ({ children, isActive, onClick }) => {
   return (
@@ -169,6 +170,7 @@ export default function Home() {
               <div
                 id={`waveform-${track.id}`}
                 style={{ width: '100%', height: '128px' }}
+                
               ></div>
               <button onClick={() => playTrack(track.id)}>Play/Pause</button>
             </div>
@@ -490,11 +492,11 @@ export default function Home() {
     >
       {/* left half */}
       <GridItem>
-        <Heading color="#C2DAF4" fontSize="30px">Synced</Heading>
+        <Heading color="#C2DAF4" fontSize="30px" fontFamily="Inria Serif, serif" fontWeight={700} >comPOSEd</Heading>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           {/* Webcam View */}
           <div className="p-4">
-            <h2 className="text-2xl font-bold mb-4">Gesture Detection</h2>
+            <h2 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Inria Serif, serif' }} >Gesture Detection</h2>
             <div>
 
               <div className="aspect-video bg-black rounded-lg overflow-hidden relative">
@@ -544,29 +546,53 @@ export default function Home() {
           </div>
         </Container> */}
       </GridItem>
-
       {/* right half */}
       <GridItem>
+     
         <Grid gap={2}>
-          <Heading>Audio Controls</Heading>
-
+        <Image src="/explode.png" width={100} height={100} style={{position:"absolute", top:70, marginLeft:25}}></Image>
+          <Heading
+          fontFamily="Inria Serif"
+          style ={{fontFamily: "Inria Serif, serif",
+            fontWeight: 700,
+            fontStyle: "normal",
+            fontSize:"1.5rem"}} size="2xl"
+          >Audio Controls</Heading>
+    
           <Container>
-            <Text>Effect: {mode}</Text>
+            <Text fontFamily="Inria Serif"
+          
+          style ={{fontFamily: "Inria Serif, serif",
+            fontWeight: 400,
+            fontStyle: "normal",
+            fontSize:"1rem"}} size="2xl">Effect: {mode}</Text>
             <Flex flexDir="row" justifyContent="space-evenly">
               <ModeBtn variant={mode === "reverb" ? "default" : "outline"} isActive={mode === "reverb"} onClick={() => setMode("reverb")}>
-                <Text p={0} m={0}>Reverb</Text>
+                <Text style ={{fontFamily: "Inria Serif, serif",
+            fontWeight: 400,
+            fontStyle: "normal",
+            fontSize:"1rem"}} size="2xl" p={0} m={0}>Reverb</Text>
               </ModeBtn>
               <ModeBtn isActive={mode === "delay"} onClick={() => setMode("delay")}>
-                <Text>Delay</Text>
+                <Text style ={{fontFamily: "Inria Serif, serif",
+            fontWeight: 400,
+            fontStyle: "normal",
+            fontSize:"1rem"}} size="2xl">Delay</Text>
               </ModeBtn>
               <ModeBtn isActive={mode === "distortion"} onClick={() => setMode("distortion")}>
-                <Text>Distortion</Text>
+                <Text style ={{fontFamily: "Inria Serif, serif",
+            fontWeight: 400,
+            fontStyle: "normal",
+            fontSize:"1rem"}} size="2xl">Distortion</Text>
               </ModeBtn>
               {/* <ModeBtn isActive={mode === "pitch"} onClick={() => setMode("pitch")}>
                 <Text>Pitch Shift</Text>
               </ModeBtn> */}
               <ModeBtn isActive={mode === "harmony"} onClick={() => setMode("harmony")}>
-                <Text>Harmony</Text>
+                <Text style ={{fontFamily: "Inria Serif, serif",
+            fontWeight: 400,
+            fontStyle: "normal",
+            fontSize:"1rem"}} size="2xl">Harmony</Text>
               </ModeBtn>
             </Flex>
           </Container>
@@ -580,7 +606,7 @@ export default function Home() {
                     el.setAttribute('data-wavesurfer-initialized', 'true');
                     const wavesurfer = WaveSurfer.create({
                       container: el,
-                      waveColor: '#4CAF50',
+                      waveColor: '#EDE6DD',
                       progressColor: '#1a1a1a',
                       cursorColor: '#fff',
                       barWidth: 2,
@@ -596,7 +622,7 @@ export default function Home() {
                   }
                 }}
               >
-                <div className="absolute left-2 text-sm z-10 mix-blend-difference text-white">Track {track.id}</div>
+                <div className="absolute left-2 text-sm z-10 mix-blend-difference text-white" style={{ fontFamily: 'Inria Serif, serif' }} >Track {track.id}</div>
               </div>
             ))}
 
@@ -607,15 +633,27 @@ export default function Home() {
               onClick={() => downloadRecording(track.blob)}
               className="flex items-center gap-2"
               variant="outline"
+              style ={{fontFamily: "Inria Serif, serif",
+              fontWeight: 400,
+              fontStyle: "normal",
+              fontSize:"1rem"}} size="2xl"
             >
               <Download className="w-4 h-4" />
               Download Track {track.id}
             </Button>
           ))}
           <Container w="100%"> {/* Recording Controls */}
-            <Text>Microphone</Text>
+            <Text style ={{fontFamily: "Inria Serif, serif",
+               fontWeight: 400,
+               fontStyle: "normal",
+               fontSize:"1.5rem"}} size="2xl"
+            >Microphone</Text>
             <Button w="100%" bg={isMicActive ? "#C25454" : "#235375"} onClick={toggleMicrophone}>
-              <Text>{isMicActive ? "Stop Microphone" : "Start Microphone"}</Text>
+              <Text style ={{fontFamily: "Inria Serif, serif",
+            fontWeight: 400,
+            fontStyle: "normal",
+            color: "#EDE6DD",
+            fontSize:"1rem"}} size="2xl">{isMicActive ? "Stop Microphone" : "Start Microphone"}</Text>
             </Button>
           </Container>
 
@@ -624,11 +662,24 @@ export default function Home() {
             bg={isRecording ? "#C25454" : "#235375"}
             onClick={isRecording ? stopRecording : startRecording}
           >
-            <Text>{isRecording ? "Stop Recording" : "Start Recording"}</Text>
+            <Text 
+            style ={{fontFamily: "Inria Serif, serif",
+            fontWeight: 400,
+            fontStyle: "normal",
+            color: "#EDE6DD",
+            
+            fontSize:"1rem"}} size="2xl">{isRecording ? "Stop Recording" : "Start Recording"}
+            
+            </Text>
           </Button>
 
           <Container>
-            <Text>Effect Amount</Text>
+            <Text style ={{fontFamily: "Inria Serif, serif",
+               fontWeight: 400,
+               fontStyle: "normal",
+               fontSize:"1.5rem"}} size="2xl"
+              >Effect Amount
+            </Text>
             <Slider
               value={effectAmount}
               onChange={setEffectAmount}
@@ -640,7 +691,12 @@ export default function Home() {
           </Container>
 
           <Container>
-            <Text>Volume</Text>
+            <Text style ={{fontFamily: "Inria Serif, serif",
+               fontWeight: 400,
+               fontStyle: "normal",
+               fontSize:"1.5rem"}} size="2xl">
+                Volume
+              </Text>
             <Slider
               value={volume}
               onValueChange={(v) => {
@@ -659,8 +715,14 @@ export default function Home() {
             <Button
               onClick={mixAndDownloadTracks}
               bg="#235375"
+              color="#EDE6DD"
+              style ={{fontFamily: "Inria Serif, serif",
+                fontWeight: 400,
+                fontStyle: "normal",
+                fontSize:"1rem"}} size="2xl"
             >
-              {/* <Download className="w-4 h-4" /> */}
+              <Download className="w-4 h-4" />
+              
               Download Final Mix
             </Button>
 

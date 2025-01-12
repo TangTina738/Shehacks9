@@ -124,7 +124,7 @@ export default function GestureDetector({ onGestureDetected, webcamRef, showLand
       [0, 5], [5, 9], [9, 13], [13, 17], // Palm
     ];
 
-    ctx.strokeStyle = 'rgba(0, 255, 0, 0.8)';
+    ctx.strokeStyle = 'rgba(195, 65, 65, 0.8)';
     ctx.lineWidth = 3;
 
     for (const [i, j] of connections) {
@@ -141,7 +141,7 @@ export default function GestureDetector({ onGestureDetected, webcamRef, showLand
   };
 
   const drawLandmarkPoints = (ctx, landmarks) => {
-    ctx.fillStyle = 'rgb(255, 0, 0)';
+    ctx.fillStyle = 'rgb(35, 83, 117)';
 
     for (const landmark of landmarks) {
       const x = landmark.x * ctx.canvas.width;
