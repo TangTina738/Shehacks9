@@ -106,6 +106,11 @@ function TutorialPage() {
           <div className="step">
             <div className="step-image">
               <img src="your-image1.png" alt="Step 1" />
+              <img
+              src="./assets/Arrow1.png"
+              alt="Squiggly Arrow Pointing to Mic Button"
+              className="arrow1"
+            />
             </div>
             <div className="step-text">
               <h2>1. Fine Tune your Mix before Recording</h2>
@@ -145,6 +150,11 @@ function TutorialPage() {
           <div className="step">
             <div className="step-image">
               <img src="your-image4.png" alt="Step 4" />
+              <img
+              src="./assets/Arrow2.png"
+              alt="Squiggly Arrow Pointing to Sliders"
+              className="arro2"
+            />
             </div>
             <div className="step-text">
               <h2>4. Track your progress</h2>
@@ -157,6 +167,11 @@ function TutorialPage() {
           <div className="step">
             <div className="step-image">
               <img src="your-image5.png" alt="Step 5" />
+              <img
+              src="./assets/Arrow3.png"
+              alt="Squiggly Arrow Pointing to Preview Mix Button"
+              className="arrow3"
+            />
             </div>
             <div className="step-text">
               <h2>5. Test your Mix</h2>
@@ -170,6 +185,11 @@ function TutorialPage() {
           <div className="step reverse">
             <div className="step-image">
               <img src="your-image6.png" alt="Step 6" />
+              <img
+              src="./assets/Arrow4.png"
+              alt="Squiggly Arrow Pointing to Download Track Button"
+              className="arrow4"
+            />
             </div>
             <div className="step-text">
               <h2>6. Download your Final Track</h2>
