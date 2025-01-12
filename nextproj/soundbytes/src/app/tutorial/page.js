@@ -25,7 +25,6 @@ function TutorialPage() {
               alt="Closed Fist Gesture"
               className="gesture-image"
             />
-            <p className="alt-text">Closed Fist Gesture</p>
           </div>
           <div className="gesture-text">
             <h2>Reverb</h2>
@@ -37,11 +36,10 @@ function TutorialPage() {
         <div className="gesture-container reverse">
           <div className="gesture-circle">
             <img
-              src="gesture2.png"
+              src="/DistortionGesture.png"
               alt="Gesture Two"
               className="gesture-image"
             />
-            <p className="alt-text">Gesture Two</p>
           </div>
           <div className="gesture-text">
             <h2>Delay</h2>
@@ -53,11 +51,11 @@ function TutorialPage() {
         <div className="gesture-container">
           <div className="gesture-circle">
             <img
-              src="gesture3.png"
-              alt="Gesture Three"
+              src="/ReverbGesture.png"
+              alt="Three Fingers Up Distortion Gesture"
               className="gesture-image"
             />
-            <p className="alt-text">Gesture Three</p>
+           
           </div>
           <div className="gesture-text">
             <h2>Distortion</h2>
@@ -66,30 +64,13 @@ function TutorialPage() {
         </div>
 
         {/* Gesture 4 */}
-        <div className="gesture-container reverse">
+        <div className="gesture-container reverse ">
           <div className="gesture-circle">
             <img
-              src="gesture4.png"
-              alt="Gesture Four"
+              src="/HarmonyGesture.png"
+              alt="Four Fingers Up Harmony Gesture"
               className="gesture-image"
             />
-            <p className="alt-text">Gesture Four</p>
-          </div>
-          <div className="gesture-text">
-            <h2>Pitch Shift</h2>
-            <p>Control pitch effortlessly for creative and dynamic effects.</p>
-          </div>
-        </div>
-
-        {/* Gesture 5 */}
-        <div className="gesture-container">
-          <div className="gesture-circle">
-            <img
-              src="gesture5.png"
-              alt="Gesture Five"
-              className="gesture-image"
-            />
-            <p className="alt-text">Gesture Five</p>
           </div>
           <div className="gesture-text">
             <h2>Harmony</h2>
