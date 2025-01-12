@@ -23,12 +23,12 @@ const Nav = () => {
           <Link href="/"><Heading color="#C2DAF4"
           style={{fontFamily: "Inria Serif, serif",
             fontWeight: 700,
-            fontStyle: "normal"}} size="4xl">Syncd</Heading></Link>
+            fontStyle: "normal"}} size="4xl">comPOSEd</Heading></Link>
           <Link href="/"><Text size="sm" p={0} m={0} style={{fontFamily: "Inria Serif, serif",
                 fontWeight: 700,
                 fontStyle: "normal",
                 fontSize: "1.3rem",
-                marginLeft:"35px" }}>Why Synced</Text></Link>
+                marginLeft:"35px" }}>Why comPOSEd?</Text></Link>
           <Link href="/tutorial"><Text size="sm" p={0} m={0}style={{fontFamily: "Inria Serif, serif",
                 fontWeight: 700,
                 fontStyle: "normal",
