@@ -1,13 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body {
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* Header Section */
 .mainHeader {
-    font-size: 3.2em;
+    font-size: 2.8em;
     color: #FFFFFF;
     text-align: left;
-    font-family: 'Inria', serif;
-    font-weight: normal;
-    margin-left:100px;
-    margin-top:130px;
+    margin-left:150px;
+    margin-right:150px;
+    margin-top:159px;
     margin-bottom: 100px;
+    line-height: 1.2;
   }
   
   /* Gesture Section */
@@ -31,10 +39,11 @@
   }
   
   .gesture-circle {
-    width: 220px; /* Match the image size */
-    height: 220px; /* Match the image size */
-    border-radius: 50%; /* Creates the circular shape */
-    overflow: hidden; /* Ensures the image doesn't overflow outside the circle */
+    padding: 10px;
+    width: 220px; 
+    height: 220px;
+    border-radius: 50%; 
+    overflow: hidden; 
     border: 3px solid #D5B893; /* Optional border */
     display: flex; /* Center image */
     justify-content: center;
@@ -43,17 +52,18 @@
   }
   
   .gesture-image {
-    width: 100%; /* Fills the container */
-    height: 100%; /* Fills the container */
-    object-fit: cover; /* Ensures the image is cropped to fill the circle */
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    margin: 0px;
+    padding: 0px;
   }
   
 
-  
+
   .alt-text {
     font-size: 15px;
-    font-family: 'Inria', serif;
-    font-weight: normal;
     color: #FFFFFF;
     text-align: center; 
     margin-top: 150px; 
@@ -63,26 +73,22 @@
   .gesture-text {
     max-width: 400px;
     color: #FFFFFF; 
-    font-size: 20px;
+    font-size: 16px;
   }
   
   .gesture-text h2 {
     font-size: 1.8em;
-    font-family: 'Inria', serif;
     margin-bottom: 10px;
   }
   
   .gesture-text p {
     font-size: 1.2em;
-    font-family: 'Inria', serif;
     line-height: 1.5;
   }
 
   .tutorialHeader {
     color: #C2DAF4;
     font-size: 2.8em;
-    font-family: 'Inria', serif;
-    font-weight: normal;
     text-align:center;
     margin-top:120px;
     margin-bottom: 80px;
@@ -93,7 +99,6 @@
     margin: 20px auto;
     text-align: center;
     padding: 20px;
-    font-family: Arial, sans-serif;
   }
   
   .tutorial-container h1 {
@@ -124,8 +129,6 @@
   
   .tutorial-text h2 {
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 10px;
     color: #FFFFFF;
   }
   
@@ -148,10 +151,14 @@
     align-items: center;
     gap: 20px;
     position: relative;
+    margin-left: 140px;
+    margin-right: 140px;
+
   }
   
   .step.reverse {
     flex-direction: row-reverse;
+
   }
   
   /* Image Section */
@@ -161,10 +168,8 @@
   }
   
   .step-image img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    max-width: 1000px;
   }
   
   .step-image.overlap {
@@ -175,7 +180,7 @@
 
   
   
-  .gesture-overlay {
+  .stepBorder {
     position: absolute;
     bottom: 10%;
     left: 50%;
@@ -184,7 +189,20 @@
     padding: 10px 15px;
     border-radius: 5px;
     font-size: 14px;
-    font-weight: bold;
+    text-align: center;
+    color: #333;
+    z-index: 10;
+  }
+
+  .step16Border {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
     text-align: center;
     color: #333;
     z-index: 10;

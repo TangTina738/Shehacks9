@@ -10,8 +10,7 @@ function TutorialPage() {
       {/* Header Section */}
       <header className="header">
         <h1 className="mainHeader">
-          Use hand gestures to trigger effects<br />
-          and immerse yourself in your audio experience.
+          Use hand gestures to trigger effects and<br /> immerse yourself in your audio experience.
         </h1>
       </header>
 
@@ -87,8 +86,10 @@ function TutorialPage() {
           <div className="step">
             <div className="step-image">
               <img src="your-image1.png" alt="Step 1" />
+              <div className="step16Border">Step 1 Border</div>
+
               <img
-              src="./assets/Arrow1.png"
+              src="Arrow1.png"
               alt="Squiggly Arrow Pointing to Mic Button"
               className="arrow1"
             />
@@ -105,7 +106,7 @@ function TutorialPage() {
           <div className="step reverse">
             <div className="step-image overlap">
               <img src="your-image2.png" alt="Step 2" />
-              <div className="gesture-overlay">Gesture Name</div>
+              <div className="stepBorder">Gesture Name</div>
             </div>
             <div className="step-text">
               <h2>2. Start Recording</h2>
@@ -118,6 +119,7 @@ function TutorialPage() {
           <div className="step reverse">
             <div className="step-image">
               <img src="your-image3.png" alt="Step 3" />
+              <div className="stepBorder">Gesture Name</div>
             </div>
             <div className="step-text">
               <h2>3. Add Effects</h2>
@@ -132,7 +134,7 @@ function TutorialPage() {
             <div className="step-image">
               <img src="your-image4.png" alt="Step 4" />
               <img
-              src="./assets/Arrow2.png"
+              src="Arrow2.png"
               alt="Squiggly Arrow Pointing to Sliders"
               className="arro2"
             />
@@ -148,8 +150,9 @@ function TutorialPage() {
           <div className="step">
             <div className="step-image">
               <img src="your-image5.png" alt="Step 5" />
+              <div className="step16Border">Step 456 Border</div>
               <img
-              src="./assets/Arrow3.png"
+              src="Arrow3.png"
               alt="Squiggly Arrow Pointing to Preview Mix Button"
               className="arrow3"
             />
@@ -167,7 +170,7 @@ function TutorialPage() {
             <div className="step-image">
               <img src="your-image6.png" alt="Step 6" />
               <img
-              src="./assets/Arrow4.png"
+              src="Arrow4.png"
               alt="Squiggly Arrow Pointing to Download Track Button"
               className="arrow4"
             />
