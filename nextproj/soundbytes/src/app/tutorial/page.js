@@ -150,7 +150,18 @@ function TutorialPage() {
 
           {/* Step 4 */}
           <div className="step">
-            <div className="step-image">
+          <div className="step-image">
+              <img src="timeline.png" alt="Step 1" 
+               style={{
+                border: "15px solid rgba(194, 218, 244, 0.5)",  // Black border
+                borderRadius: "25px",      // Curved edges (adjust the value as needed)
+                padding: "5px",           // Optional: Add space between the border and image
+                width: "100%",            // Optional: Ensures it scales properly
+                height: "auto",            // Maintains aspect ratio
+                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)"
+              }} 
+              />
+
             </div>
             <div className="step-text">
               <h2>4. Track your progress</h2>
@@ -162,7 +173,7 @@ function TutorialPage() {
           {/* Step 5 */}
           <div className="step">
             <div className="step-image">
-              <img src="liveFeedPic.png" alt="Step 5" 
+              <img src="previewMix.png" alt="Step 5" 
                 style={{
                   border: "15px solid rgba(194, 218, 244, 0.5)",  // Black border
                   borderRadius: "25px",      // Curved edges (adjust the value as needed)
@@ -183,8 +194,17 @@ function TutorialPage() {
 
           {/* Step 6 */}
           <div className="step reverse">
-            <div className="step-image">
-              
+          <div className="step-image">
+              <img src="downloadTrack.png" alt="Step 1" 
+               style={{
+                border: "15px solid rgba(194, 218, 244, 0.5)",  // Black border
+                borderRadius: "25px",      // Curved edges (adjust the value as needed)
+                padding: "5px",           // Optional: Add space between the border and image
+                width: "100%",            // Optional: Ensures it scales properly
+                height: "auto",            // Maintains aspect ratio
+                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)"
+              }} 
+              />
 
             </div>
             <div className="step-text">
