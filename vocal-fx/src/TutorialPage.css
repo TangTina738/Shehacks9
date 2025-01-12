@@ -72,4 +72,131 @@
     font-family: 'Inria', serif;
     line-height: 1.5;
   }
+
+  .tutorialHeader {
+    color: #C2DAF4;
+    font-size: 2.8em;
+    font-family: 'Inria', serif;
+    font-weight: normal;
+    text-align:center;
+    margin-top:120px;
+    margin-bottom: 80px;
+  }
+  
+  .tutorial-container {
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .tutorial-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #C2DAF4;
+  }
+  
+  .tutorial-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .tutorial-image img {
+    width: 100%;
+    max-width: 400px; /* Limit the image size */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tutorial-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .tutorial-text h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+  }
+  
+  .tutorial-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFF;
+  }
+
+
+/* Step-by-step Section */
+.step-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .step {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+  }
+  
+  .step.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  /* Image Section */
+  .step-image {
+    position: relative;
+    flex: 1;
+  }
+  
+  .step-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .step-image.overlap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gesture-overlay {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    z-index: 10;
+  }
+  
+  /* Text Section */
+  .step-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .step-text h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .step-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+  }
   
