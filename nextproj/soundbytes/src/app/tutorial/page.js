@@ -10,7 +10,7 @@ function TutorialPage() {
       {/* Header Section */}
       <header className="header">
         <h1 className="mainHeader">
-          Use hand gestures to trigger effects and<br /> immerse yourself in your audio experience.
+          Use hand gestures to trigger effects and immerse yourself in your audio experience.
         </h1>
       </header>
 
