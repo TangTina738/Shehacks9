@@ -91,15 +91,11 @@ function TutorialPage() {
                 borderRadius: "25px",      // Curved edges (adjust the value as needed)
                 padding: "5px",           // Optional: Add space between the border and image
                 width: "100%",            // Optional: Ensures it scales properly
-                height: "auto"            // Maintains aspect ratio
+                height: "auto",            // Maintains aspect ratio
+                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)"
               }} 
               />
 
-              <img
-              src="Arrow1.png"
-              alt="Squiggly Arrow Pointing to Mic Button"
-              className="arrow1"
-            />
             </div>
             <div className="step-text">
               <h2>1. Fine Tune your Mix before Recording</h2>
@@ -112,7 +108,16 @@ function TutorialPage() {
           {/* Step 2 */}
           <div className="step reverse">
             <div className="step-image overlap">
-              <img src="AudioControls.png" alt="Step 2" />
+              <img src="AudioControls.png" alt="Step 2"
+              style={{
+                border: "15px solid rgba(194, 218, 244, 0.5)",  // Black border
+                borderRadius: "25px",      // Curved edges (adjust the value as needed)
+                padding: "5px",           // Optional: Add space between the border and image
+                width: "100%",            // Optional: Ensures it scales properly
+                height: "auto",            // Maintains aspect ratio
+                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)"
+              }} 
+              />
             </div>
             <div className="step-text">
               <h2>2. Start Recording</h2>
@@ -124,7 +129,16 @@ function TutorialPage() {
           {/* Step 3 */}
           <div className="step reverse">
             <div className="step-image">
-              <img src="effects.png" alt="Step 3" />
+              <img src="effects.png" alt="Step 3"
+               style={{
+                border: "15px solid rgba(194, 218, 244, 0.5)",  // Black border
+                borderRadius: "25px",      // Curved edges (adjust the value as needed)
+                padding: "5px",           // Optional: Add space between the border and image
+                width: "100%",            // Optional: Ensures it scales properly
+                height: "auto",            // Maintains aspect ratio
+                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)"
+              }} 
+               />
             </div>
             <div className="step-text">
               <h2>3. Add Effects</h2>
@@ -137,12 +151,6 @@ function TutorialPage() {
           {/* Step 4 */}
           <div className="step">
             <div className="step-image">
-              <img src="your-image4.png" alt="Step 4" />
-              <img
-              src="Arrow2.png"
-              alt="Squiggly Arrow Pointing to Sliders"
-              className="arro2"
-            />
             </div>
             <div className="step-text">
               <h2>4. Track your progress</h2>
@@ -160,14 +168,10 @@ function TutorialPage() {
                   borderRadius: "25px",      // Curved edges (adjust the value as needed)
                   padding: "5px",           // Optional: Add space between the border and image
                   width: "100%",            // Optional: Ensures it scales properly
-                  height: "auto"            // Maintains aspect ratio
+                  height: "auto",            // Maintains aspect ratio
+                  boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)"
                 }} 
               />
-              <img
-              src="Arrow3.png"
-              alt="Squiggly Arrow Pointing to Preview Mix Button"
-              className="arrow3"
-            />
             </div>
             <div className="step-text">
               <h2>5. Test your Mix</h2>
@@ -181,11 +185,7 @@ function TutorialPage() {
           <div className="step reverse">
             <div className="step-image">
               
-              <img
-              src="Arrow4.png"
-              alt="Squiggly Arrow Pointing to Download Track Button"
-              className="arrow4"
-            />
+
             </div>
             <div className="step-text">
               <h2>6. Download your Final Track</h2>
