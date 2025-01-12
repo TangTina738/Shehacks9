@@ -1,0 +1,75 @@
+/* Header Section */
+.mainHeader {
+    font-size: 3.2em;
+    color: #FFFFFF;
+    text-align: left;
+    font-family: 'Inria', serif;
+    font-weight: normal;
+    margin-top:130px;
+    margin-bottom: 100px;
+  }
+  
+  /* Gesture Section */
+  .gesture-section {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .gesture-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; 
+    flex-wrap: wrap;
+  }
+  
+  .gesture-container.reverse {
+    flex-direction: row-reverse; 
+  }
+  
+  /* Circle container */
+  .gesture-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .gesture-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #D5B893;
+    background-color: #D9D9D9;
+  }
+  
+  .alt-text {
+    font-size: 15px;
+    font-family: 'Inria', serif;
+    font-weight: normal;
+    color: #FFFFFF;
+    text-align: center; 
+    margin-top: 5px; 
+  }
+  
+  /* Gesture text */
+  .gesture-text {
+    max-width: 400px;
+    color: #FFFFFF; 
+    font-size: 20px;
+  }
+  
+  .gesture-text h2 {
+    font-size: 1.8em;
+    font-family: 'Inria', serif;
+    margin-bottom: 10px;
+  }
+  
+  .gesture-text p {
+    font-size: 1.2em;
+    font-family: 'Inria', serif;
+    line-height: 1.5;
+  }
+  
