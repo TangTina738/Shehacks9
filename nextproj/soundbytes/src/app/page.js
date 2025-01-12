@@ -1,14 +1,25 @@
+"use client";
 import Image from "next/image";
 import { Flex, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import {useEffect } from "react";
+
 
 export default function Home() {
+
+  /**For Scroll Fire */
+  useEffect(() => {
+    Aos.init({duration: 1000});
+  }, []);
+  
   return (
     // grid for entire page body
     <Grid>
       <GridItem>
-      <Image src="/nest.png" width={700} height={250} style={{position: "absolute"}}></Image>
+      <Image src="/3d.png" width={850} height={100} style={{position: "absolute", marginTop: "0px", opacity: "0.4"}}></Image>
         <Grid gridTemplateColumns="repeat(9,1fr)" my={14}>
           <GridItem gridColumnStart={2} colSpan={4}>
             {/* grid for landing text */}
@@ -35,26 +46,36 @@ export default function Home() {
                 <Flex flexDirection="row" gap={4}>
                   <Link href="/imagine">
                     <Button
-                      px={4}
+                      px={5}
                       rounded="full"
                       bg="#C2DAF4"
                       color="#6F4D38"
-                      h="30px"
+                      h="40px"
+                      _hover={{
+                        color: "#25344f", 
+                        bg: "#FFFFFF",
+                        transition: "background-color 0.9s ease-in-out", // Smooth hover transition
+                      }}
                       style={{fontFamily: "Inria Serif, serif",
                         fontWeight: 700,
                         fontStyle: "normal",
                         fontSize:"1.2rem",}}
                     >
-                      Try now
+                      Try Now
                     </Button>
                   </Link>
                   <Link href="/tutorial">
                     <Button
-                      px={4}
+                      px={5}
                       rounded="full"
                       bg="#C2DAF4"
                       color="#6F4D38"
-                      h="30px"
+                      h="40px"
+                      _hover={{
+                        color: "#25344f", 
+                        bg: "#FFFFFF",
+                        transition: "background-color 0.9s ease-in-out", 
+                      }}
                       style={{fontFamily: "Inria Serif, serif",
                         fontWeight: 700,
                         fontStyle: "normal",
@@ -72,18 +93,35 @@ export default function Home() {
             <Image src="/girl.png" width={450} height={350}></Image>
             {/* </GridItem> */}
           </GridItem>
+          <Image src="/curly.png" width={130} height={150}
+          style={{
+            position: "absolute", 
+            right: "-7px", 
+            top: "100px", 
+            animation: "bounce 2s infinite"}}></Image>
+            <Image src="/music-note.png" width={80} height={80} 
+            style={{
+              position: "absolute", 
+              right: "490px", 
+              top: "510px",
+              animation: "bounce 1.7s infinite",
+              }}></Image>
         </Grid>
       </GridItem>
-      <GridItem>
+      <GridItem as="div" data-aos="fade-in" style={{margin: "10px"}}>
         <Heading 
         textAlign="center" 
         color="#632024"
         style={{fontFamily: "Inria Serif, serif",
           fontWeight: 700,
-          fontStyle: "normal"}} size="5xl">
+          fontStyle: "normal",
+          marginTop: "350px",
+          marginBottom: "20px"
+          }} size="5xl">
           Why Syncd?
         </Heading>
       </GridItem>
+      <Image src="/squiggle.png" width={360} height={100} style={{position: "absolute", right: "-120px", top: "80vh", overflow:"hidden", maxWidth:"100vw"}}></Image>
       <GridItem>
         <Grid
           mb={6}
