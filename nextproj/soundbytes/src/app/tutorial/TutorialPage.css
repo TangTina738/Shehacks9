@@ -29,13 +29,16 @@ body {
   .gesture-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    left: -100px;
     gap: 30px; 
     flex-wrap: wrap;
+    margin-left: 305px;
   }
   
   .gesture-container.reverse {
     flex-direction: row-reverse; 
+    margin-right: 305px;
+
   }
   
   .gesture-circle {
